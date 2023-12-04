@@ -2,37 +2,79 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .item-todo {
+  padding: 14px;
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 15px;
+  color: #34495e;;
+  border: 2px solid #34495e;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .item-todo .item-text {
+  display: inline-block;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App input {
+  width: 340px;
+  padding: 14px 32px 14px 16px;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #34495e;
+  outline: none;
+  background: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.App button {
+  padding: 16px 7px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #34495e;
+  color: #fff;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .item-todo .item-delete {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+  position: relative;
+  left: -4px;
+  bottom: 5px;
+  color: #E91E63
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: auto;
+    padding: 10px;
+}
+
+.task-stats .tasks-count span,
+.task-stats .tasks-completed span {
+    color: #fff;
+    padding: 1px 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.task-stats .tasks-count span {
+    background-color: #34495e;
+}
+
+.task-stats .tasks-completed span {
+    background-color: #E91E63;
 }
